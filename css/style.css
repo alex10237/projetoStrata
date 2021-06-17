@@ -69,6 +69,14 @@ blockquote {
     padding: 0.5em 0 0.5em 1.5em;
 }
 
+blockquote p{
+    margin-bottom: 0.5em;
+}
+
+blockquote p:last-child{
+    margin-bottom: 0;
+}
+
 code {
     background: #f7f7f7;
     border-radius: 0.35em;
@@ -91,6 +99,13 @@ ul, ol {
 
 li {
     padding-left: 0.5em;
+}
+
+.hidden{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .ul-alternate {
@@ -118,7 +133,42 @@ apenas no ultimo elemento da classe*/
 .ul-icons li {
     display: inline-block;
     font-size: 2em;
+}
+
+.ul-icons i{
+    color: #b8b8b8;
+    transition: all 0.5s;
+}
+.ul-icons i:hover , .ul-icons-footer i:hover{
     color: #49bf9d;
+}
+
+.ul-icons a{
+    border-color: transparent;
+}
+
+.ul-incons-footer {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-icons-footer li {
+    display: inline-block;
+    font-size: 2em;
+   
+}
+
+.ul-icons-footer i{
+    color: rgba(204, 204, 204, 0.548);
+    transition: all 0.5s;
+}
+
+.ul-icons-footer a{
+    border-color: transparent;
+}
+
+.copyright a{
+    color: #ccc;
 }
 
 input, label, textarea, select {

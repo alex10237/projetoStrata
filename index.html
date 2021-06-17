@@ -24,10 +24,11 @@
             <h1 class="main-header-title">
                 Trabalho de HTML e CSS <br>
                 <strong>Alex Moreira Da Silva</strong>,<br>
-                tecnólogo em análise e desenvolvimento de sistemas <br>
-                retirado de
-                <a href="https://github.com/alex10237" class="main-header-link">github.com</a>
+                tecnólogo em análise e desenvolvimento de sistemas
             </h1>
+            <p>
+               Retirado de <a href="http://html5up.net" class="main-header-title"></a> 
+            </p>
         </header>
         <main class="main-content">
 
@@ -177,8 +178,9 @@
                 <!-- A tag <blockquote> indica que o texto incluído é uma longa citação,
                 seguida do atributo "cite" que é onde se indica o autor daquela citação. -->
                 <blockquote cite="http://developer.mozilla.org">
-                    Esta é uma citação tirada da Mozzila
-                    Developer Center.
+                    <p>Esta é uma citação tirada da Mozzila
+                    Developer Center.</p>
+                    <p>outros parágrafos</p>
                 </blockquote>
 
                 <p>According to Mozilla's website,
@@ -189,18 +191,15 @@
                         Firefox 1.0 was released in 2004 and became a big success
                     </q>
                 </p>
-
+                
                 <h4>Pré-formatado</h4>
-                <pre>
-                    <code>
-                        <!-- Os espaços dados no codigo html são considerados na página 
+                <!-- Os espaços dados no codigo html são considerados na página 
                         WEB quando inseridos dentro de uma tag <pre></pre> -->
-
-                &lt;script&gt;
-                alert('oi');
-                &lt;/script&gt;
-                </code>
-                </pre>
+                <pre><code>
+    &lt;script&gt;
+    alert('oi');
+    &lt;/script&gt;
+                </code></pre>
 
                 <h4>Listas</h4>
 
@@ -236,8 +235,16 @@
 
                         <h5>Ícones</h5>
                         <ul class="ul-icons">
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-facebook-square"></i></li>
+                            
+                            <li><span class="hidden">Twitter</span><a href="twitter.com" class="icon-link"><i class="fab fa-twitter"></i></a></li>
+                            
+                            <li><span class="hidden">Facebook</span><a href="facebook.com" class="icon-link"><i class="fab fa-facebook-square"></i></a></li>
+
+                            <li><span class="hidden">GitHub</span><a href="http://github.com" class="icon-link"><i class="fab fa-github"></i></a></li>
+                
+                            <li><span class="hidden">basketball</span><a href="#" class="icon-link"><i class="fas fa-basketball-ball"></i></a></li>
+                
+                            <li><span class="hidden">E-mail</span><a href="https://webmail.skymail.net.br/" class="icon-link"><i class="fas fa-envelope"></i></a></li>  
                         </ul>
                     </div>
                 </div>
@@ -422,33 +429,36 @@
 
                 <h5>Formulários</h5>
 
-                <label for="nome">Nome
-                    <input type="text" name="nome" id="nome" placeholder="Nome">
-                </label>
+                <form action="#" method="POST">
 
-                <label for="email">Email
-                    <input type="email" name="email" id="email" placeholder="Email">
-                </label>
+                    <label for="nome">Nome
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                    </label>
 
-                <select name="" id="">
-                    <option value="0">Selecione</option>
-                    <option value="1">HTML</option>
-                    <option value="2">CSS</option>
-                    <option value="23">JavaScript</option>
-                </select>
+                    <label for="email">Email
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </label>
 
-                <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
-                <label><input type="radio" value="media" name="prioridade">Média Prioridade</label>
-                <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
+                    <select name="" id="">
+                        <option value="0">Selecione</option>
+                        <option value="1">HTML</option>
+                        <option value="2">CSS</option>
+                        <option value="23">JavaScript</option>
+                    </select>
 
-                <label><input type="checkbox" name="cpoy">Envie-me uma cópia</label>
-                <label><input type="checkbox" name="human">Sou humano</label>
+                    <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
+                    <label><input type="radio" value="media" name="prioridade">Média Prioridade</label>
+                    <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
 
-                <label for="msg">Mensagem:</label>
-                <textarea placeholder="digite uma mensagem" id="msg"></textarea>
+                    <label><input type="checkbox" name="cpoy">Envie-me uma cópia</label>
+                    <label><input type="checkbox" name="human">Sou humano</label>
 
-                <input type="submit" class="button-default button-default-big" value="Enviar">
-                <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+                    <label for="msg">Mensagem:</label>
+                    <textarea placeholder="digite uma mensagem" id="msg"></textarea>
+
+                    <input type="submit" class="button-default button-default-big" value="Enviar">
+                    <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+                </form>    
             </section>
 
             <sectionm class="main-content-section">
@@ -504,16 +514,16 @@
         </main>
         <footer class="main-footer">
 
-            <ul class="ul-icons">
-                <li><a href="http://twitter.com" class="icon-link"><i class="fab fa-twitter"></i></a></li>
+            <ul class="ul-icons-footer">
+                <li><span class="hidden">Twitter</span><a href="http://twitter.com" class="icon-link"><i class="fab fa-twitter"></i></a></li>
 
-                <li><a href="http://facebook.com" class="icon-link"><i class="fab fa-facebook-square"></i></a></li> 
+                <li><span class="hidden">Facebook</span><a href="http://facebook.com" class="icon-link"><i class="fab fa-facebook-square"></i></a></li> 
                 
-                <li><a href="http://github.com" class="icon-link"><i class="fab fa-github"></i></a></li>
+                <li><span class="hidden">GitHub</span><a href="http://github.com" class="icon-link"><i class="fab fa-github"></i></a></li>
                 
-                <li><a href="#" class="icon-link"><i class="fas fa-basketball-ball"></i></a></li>
+                <li><span class="hidden">basketball</span><a href="#" class="icon-link"><i class="fas fa-basketball-ball"></i></a></li>
                 
-                <li><a href="#" class="icon-link"><i class="fas fa-envelope"></i></a></li>  
+                <li><span class="hidden">E-mail</span><a href="https://webmail.skymail.net.br/" class="icon-link"><i class="fas fa-envelope"></i></a></li>  
                 
             </ul>
 
